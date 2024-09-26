@@ -1,0 +1,180 @@
+@charset "UTF-8";
+@import url(root.css);
+
+body {
+    background: var(--color-primary);
+    font-family: var(--font-primary);
+}
+
+header:not(.card-header) {
+    color: var(--color-tertiary);
+    text-align: center;
+}
+
+header:not(.card-header) > nav > ul {
+    list-style: none;
+    columns: 2;
+}
+
+header:not(.card-header) > nav > ul > li.nav-item.first > a {
+    font-size: 1.5rem;
+}
+
+header:not(.card-header) > nav > ul > li.nav-item > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+header:not(.card-header) > nav > ul > li.nav-item > a:hover {
+    font-weight: bold;
+}
+
+header:not(.card-header) > div.logo-container {
+    margin: 40px 0;
+}
+
+header:not(.card-header) > div.logo-container > h1 {
+    color: var(--color-secondary);
+    font-family: var(--font-emphasis);
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+header:not(.card-header) > div.logo-container > p {
+    color: white;
+    font-size: 1.3rem;
+    margin: auto;
+    max-width: 280px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form > input[type=text] {
+    border-radius: 10px;
+    border: none;
+    width: 180px;
+}
+
+form > input[type=image] {
+   margin-left: 6px;
+}
+
+form + nav {
+    display: none;
+}
+
+main > div.card-container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+
+main > div.card-container > article.card {
+    aspect-ratio: 39/44;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 12px;
+    width: 224px;
+    margin: 20px 0;
+}
+
+main > div.card-container > article.card > section > h1 {
+    font-size: 1.3rem;
+    margin: 6px 0;
+}
+
+main > div.card-container > article.card > section > p {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    text-align: justify;
+}
+
+main > nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--font-emphasis);
+    margin-bottom: 20px;
+}
+
+main > nav > button {
+    background: none;
+    border: none;
+    font-style: italic;
+    font-family: var(--font-emphasis);
+    color: var(--color-tertiary);
+}
+
+main > nav > button:hover {
+    cursor: pointer;
+    color: var(--color-secondary);
+}
+
+main > nav > ul > li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+main > nav > ul > li > a.checked {
+    border-top: 3px solid var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+main > nav > ul > li > a {
+    padding: 5px 6px 0;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--color-tertiary);
+    text-decoration: none;
+}
+
+main > nav > ul > li > a:not(.checked):hover {
+    color: var(--color-secondary);
+}
+
+footer:not(.card-footer) {
+    border-top: 1px solid var(--color-division);
+}
+
+footer:not(.card-footer) > nav > ul {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    min-height: 100px;
+}
+
+footer:not(.card-footer) a {
+    text-decoration: none;
+    color: white;
+}
+
+footer:not(.card-footer) > nav > ul > li > a:not(.link-highlight) {
+    font-size: 1.5rem;
+    margin-right: 6px;
+}
+
+footer:not(.card-footer) .link-highlight {
+    background: var(--color-highlight);
+    padding: 6px;
+    border-radius: 6px;
+}
+
+footer:not(.card-footer) .link-highlight img {
+    margin-bottom: -4px;
+}
+
+/*@media (max-width: 280px) {
+    body {
+        background-color: red;
+    }
+}

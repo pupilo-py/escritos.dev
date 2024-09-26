@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Recursive;
+    src: url(../fonts/recursive/Recursive-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/poppins/Poppins-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Source Sans 3";
+    src: url(../fonts/source_sans_3/SourceSans3-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --color-border: hsl(218, 13%, 17%);
+    --color-division: hsl(0, 0%, 30%);
+    --color-highlight: hsla(208, 71%, 58%);
+    --color-primary: hsl(217, 16%, 16%);
+    --color-secondary: hsl(0, 100%, 73%);
+    --color-tertiary: hsl(0, 0%, 56%);
+    --font-emphasis: Recursive;
+    --font-primary: Poppins;
+    --font-secondary: "Source Sans 3";
+}
